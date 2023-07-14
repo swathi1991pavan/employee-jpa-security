@@ -28,9 +28,8 @@ public class UserInfo {
 	@Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}" , message = "invalid email address")
 	private String email;
 	
-	@Column (name="Password" , nullable=false, length=50)
-	@NotEmpty (message ="shouldn't be null")
-	@Size(min = 3,max=50 , message = "Size should be between 3 to 50")
+	@Column (name="Password" , nullable=false )
+	
 	private String password; 
 	 
 	private String roles;
